@@ -17,8 +17,10 @@ public class Driver {
     //we can specify reference type as a WebDriver
     //it helps to define object type in a run time (polymorphism)
     private static WebDriver driver;
+
     private Driver(){}
     public static WebDriver getDriver(){
+
         if(driver == null){
 
             String browser = "chrome";
