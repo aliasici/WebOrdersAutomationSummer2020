@@ -11,7 +11,7 @@ public class ConfigurationReader {
     static {
         // try with resources
         //allows to automatically close input stream when object is not used any more
-        // works only for the classes that implement AutoClosable
+        // works only for the classes that implement AutoClosable interface
         try(InputStream in = new FileInputStream("configuration.properties")){
             properties.load(in);
         }catch (Exception e){
