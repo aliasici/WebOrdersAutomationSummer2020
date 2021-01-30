@@ -1,4 +1,4 @@
-@smoke_test
+@smoke
 Feature: Login
 
   Scenario: User just logs in
