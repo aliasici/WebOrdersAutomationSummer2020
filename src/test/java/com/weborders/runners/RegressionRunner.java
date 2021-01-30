@@ -11,8 +11,12 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         dryRun = false,
         // monochrome=true,
-        plugin = "json:target/cucumber.json",
-        tags = "@regression"
+        plugin = {
+                "rerun:target/rerun.txt",
+                "json:target/cucumber.json",
+                "timeline:target/timeline-report"
+        },
+       // tags = "@regression"
         //{"pretty","html:test-output"},json
 
 )
