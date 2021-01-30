@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
        // monochrome=true,
         plugin = "json:target/cucumber.json",
-        tags = "smoke"
+        tags = "@smoke"
         //{"pretty","html:test-output"},json
 
 )
