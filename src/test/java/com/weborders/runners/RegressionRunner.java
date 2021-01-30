@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "json:target/cucumber.json",
                 "timeline:target/timeline-report"
-        },
+        }
        // tags = "@regression"
         //{"pretty","html:test-output"},json
 
