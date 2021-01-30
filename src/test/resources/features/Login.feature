@@ -1,4 +1,4 @@
-@smoke
+@smoke @regression
 Feature: Login
 
   Scenario: User just logs in
