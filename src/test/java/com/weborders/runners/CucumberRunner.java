@@ -9,8 +9,10 @@ import org.junit.runner.RunWith;
         glue = "com/weborders/step_definitions",
         features = "src/test/resources/features",
         dryRun = false,
-        monochrome=true,
-        plugin = {"pretty","html:test-output"}
+       // monochrome=true,
+        plugin = "json:target/cucumber.json",
+        tags = "@something"
+        //{"pretty","html:test-output"},json
 
 )
 public class CucumberRunner {
