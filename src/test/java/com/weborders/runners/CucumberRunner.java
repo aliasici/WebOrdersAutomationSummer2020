@@ -8,10 +8,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = "com/weborders/step_definitions",
         features = "src/test/resources/features",
-        dryRun = false,
+        dryRun = true,
        // monochrome=true,
-        plugin = "json:target/cucumber.json",
-        tags = "@smoke"
+        plugin = {"json:target/cucumber.json",
+                "html:target/cucumber-report.html"},
+        tags = "@etsyWip"
         //{"pretty","html:test-output"},json
 
 )
